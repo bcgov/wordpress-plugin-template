@@ -3,7 +3,7 @@
  * Plugin Name: {Plugin Name}
  * Plugin URI: https://github.com/bcgov/{plugin-name}
  * Author: govwordpress@gov.bc.ca
- * Author URI: https://apps.itsm.gov.bc.ca/jira/browse/ENG-138
+ * Author URI: {JIRA Epic URL}
  * Description: WordPress {plugin-name} plugin is a plugin that adds custom functionality to your WordPress site.
  * Requires at least: 6.4.4
  * Tested up to: 6.5
@@ -39,14 +39,11 @@ function register_plugin_blocks() {
 add_action( 'init', 'register_plugin_blocks' );
 
 
-
-//Example
-
-// use Bcgov\{PluginName}\{
-//     {ClassName},
-// };
-
-
-// // Initialize
-// ${feature_name} = new {ClassName}();
-// ${feature_name}->init();
+/**  // Example.
+* use Bcgov\{PluginName}\{
+**     {ClassName},
+** };
+** //Initialize
+** ${feature_name} = new {ClassName}();
+** ${feature_name}->init();
+*/

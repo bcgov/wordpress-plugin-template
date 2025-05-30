@@ -4,7 +4,7 @@ name: Testing
 on:
   pull_request:
     branches:
-      - development
+      - main
 
 jobs:
   tests:

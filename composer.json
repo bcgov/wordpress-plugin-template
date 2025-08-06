@@ -1,6 +1,6 @@
 {
     "name": "bcgov/wordpress-plugin",
-    "description": "{bcgov-plugin-template} Plugin",
+    "description": "{Plugin Name} Plugin",
     "type": "wordpress-plugin",
     "license": "Apache-2.0",
     "repositories": [
@@ -19,7 +19,7 @@
         }
     },
     "scripts": {
-        "test-setup":[
+        "test-setup":[ 
             "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
         ],
         "production": [

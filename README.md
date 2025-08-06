@@ -29,8 +29,8 @@ This repository provides a modern, well-structured template for developing WordP
 
 2. **Update plugin information**
    - Edit `plugin.php` and replace the placeholder values:
-     - `bcgov-plugin-template` with your plugin name
-     - `{plugin-name}` with your plugin slug
+     - `{Plugin Name}` with your plugin name
+     - `bcgov-plugin-template` with your plugin slug
      - `{PluginName}` with your plugin's namespace
      - Update the description and other metadata
 

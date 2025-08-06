@@ -6,4 +6,4 @@ on:
   workflow_dispatch:
 jobs:
   phpcs-validation:
-    uses: bcgov/des-git-workflows/.github/workflows/phpcs-validate.yml@main
+    uses: bcgov/des-git-workflows/.github/workflows/phpcs-validate.yml@feature/DESCW-2984_github-workflow-improvements

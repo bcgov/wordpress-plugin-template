@@ -1,20 +1,20 @@
 <?php
 /**
- * Plugin Name: {Plugin Name}
- * Plugin URI: https://github.com/bcgov/{plugin-name}
+ * Plugin Name: {bcgov-plugin-template}
+ * Plugin URI: https://github.com/bcgov/{bcgov-plugin-template}
  * Author: govwordpress@gov.bc.ca
  * Author URI: {JIRA Epic URL}
- * Description: WordPress {plugin-name} plugin is a plugin that adds custom functionality to your WordPress site.
+ * Description: WordPress {bcgov-plugin-template} plugin is a plugin that adds custom functionality to your WordPress site.
  * Requires at least: 6.4.4
  * Tested up to: 6.5
  * Requires PHP: 7.4
  * Version: 1.0.0
  * License: Apache License Version 2.0
  * License URI: LICENSE
- * Text Domain: {plugin-name}
+ * Text Domain: {bcgov-plugin-template}
  * Tags:
  *
- * @package {PluginName}
+ * @package {bcgov-plugin-template}
  */
 
 /**

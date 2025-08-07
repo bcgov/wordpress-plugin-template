@@ -1,5 +1,7 @@
-# WordPress Plugin Template
+[![MIT License](https://img.shields.io/github/license/bcgov/quickstart-openshift.svg)](/LICENSE)
+[![Lifecycle](https://img.shields.io/badge/Lifecycle-Experimental-339999)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
 
+# WordPress Plugin Template
 This repository provides a modern, well-structured template for developing WordPress plugins. It's designed to help developers quickly bootstrap new WordPress plugins with best practices, modern development tools, and a standardized structure.
 
 ## Features

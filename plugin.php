@@ -1,22 +1,49 @@
 <?php
 /**
  * Plugin Name: {Plugin Name}
- * Plugin URI: https://github.com/bcgov/{plugin-name}
+ * Plugin URI: https://github.com/bcgov/bcgov-plugin-template
  * Author: govwordpress@gov.bc.ca
  * Author URI: {JIRA Epic URL}
- * Description: WordPress {plugin-name} plugin is a plugin that adds custom functionality to your WordPress site.
+ * Description: WordPress bcgov-plugin-template plugin is a plugin that adds custom functionality to your WordPress site.
  * Requires at least: 6.4.4
  * Tested up to: 6.5
  * Requires PHP: 7.4
  * Version: 1.0.0
  * License: Apache License Version 2.0
  * License URI: LICENSE
- * Text Domain: {plugin-name}
+ * Text Domain: bcgov-plugin-template
  * Tags:
  *
  * @package {PluginName}
  */
 
+/**
+ * AUTOLOADER SETUP INSTRUCTIONS:
+ *
+ * 1. Choose your plugin namespace: Replace {PluginName} with your plugin name (e.g., MyAwesomePlugin)
+ * 2. Choose your main class name: Replace {ClassName} with your bootstrap class (e.g., Plugin)
+ * 3. Update composer.json autoload section to match your chosen namespace
+ * 4. Create your class file in: src/Bcgov/{your-plugin-name}/{ClassName}.php
+ * 5. Uncomment and customize the template below:
+ *
+ * Template code to uncomment:
+ *
+ * use Bcgov\{PluginName}\{ClassName};
+ *
+ * $autoloader = __DIR__ . '/vendor/autoload.php';
+ * if ( file_exists( $autoloader ) ) {
+ *     require_once $autoloader;
+ * }
+ *
+ * if ( ! class_exists( 'Bcgov\\{PluginName}\\{ClassName}' ) ) {
+ *     return;
+ * }
+ *
+ * $plugin_instance = new \Bcgov\{PluginName}\{ClassName}();
+ * if ( method_exists( $plugin_instance, 'init' ) ) {
+ *     $plugin_instance->init();
+ * }
+ */
 
 
 /**
@@ -37,13 +64,3 @@ function register_plugin_blocks() {
 }
 // Hook the function into the 'init' action.
 add_action( 'init', 'register_plugin_blocks' );
-
-
-/**  // Example.
-* use Bcgov\{PluginName}\{
-**     {ClassName},
-** };
-** //Initialize
-** ${feature_name} = new {ClassName}();
-** ${feature_name}->init();
-*/

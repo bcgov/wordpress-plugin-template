@@ -28,11 +28,12 @@ This repository provides a modern, well-structured template for developing WordP
 2. **Update plugin information**
    - Edit `plugin.php` and replace the placeholder values:
      - `{Plugin Name}` with your plugin name
-     - `{plugin-name}` with your plugin slug
+     - `bcgov-plugin-template` with your plugin slug
      - `{PluginName}` with your plugin's namespace
      - Update the description and other metadata
 
 3. **Install dependencies**
+
    ```bash
    composer install
    ```
@@ -43,15 +44,16 @@ This repository provides a modern, well-structured template for developing WordP
    - Use the provided namespace structure: `Bcgov\{PluginName}\{ClassName}`
 
 5. **Building blocks**
-   ```bash
-   npm install
-   npm run build
-   ```
+
+```bash
+npm install
+npm run build
+```
 
 ## Project Structure
 
-```
-├── Blocks/           # Gutenberg blocks
+```shell
+├── Blocks/          # Gutenberg blocks
 ├── src/             # PHP source files
 ├── vendor/          # Composer dependencies
 ├── workflows/       # GitHub Actions workflows

@@ -35,6 +35,7 @@ This repository provides a modern, well-structured template for developing WordP
      - Update the description and other metadata
 
 3. **Install dependencies**
+
    ```bash
    composer install
    ```
@@ -45,15 +46,16 @@ This repository provides a modern, well-structured template for developing WordP
    - Use the provided namespace structure: `Bcgov\{PluginName}\{ClassName}`
 
 5. **Building blocks**
-   ```bash
-   npm install
-   npm run build
-   ```
+
+```bash
+npm install
+npm run build
+```
 
 ## Project Structure
 
-```
-├── Blocks/           # Gutenberg blocks
+```shell
+├── Blocks/          # Gutenberg blocks
 ├── src/             # PHP source files
 ├── vendor/          # Composer dependencies
 ├── workflows/       # GitHub Actions workflows

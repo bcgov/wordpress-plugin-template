@@ -21,12 +21,12 @@
 		"test:e2e": "wp-scripts test-e2e --passWithNoTests",
 		"test:unit": "wp-scripts test-unit-js --passWithNoTests",
 		"test": "npm run test:unit"
-	
+
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^30.3.0",
 		"@bcgov/wordpress-eslint": "git+https://github.com/bcgov/wordpress-eslint.git#semver:1.x",
-		"@bcgov/wordpress-stylelintrc": "git+https://github.com/bcgov/wordpress-stylelintrc.git#semver:1.x",	
+		"@bcgov/wordpress-stylelintrc": "git+https://github.com/bcgov/wordpress-stylelintrc.git#semver:1.x",
 		"prettier": "^2.2.0"
 	},
 	"dependencies": {

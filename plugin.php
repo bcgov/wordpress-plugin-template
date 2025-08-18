@@ -17,7 +17,27 @@
  * @package {PluginName}
  */
 
+/**
+ * AUTOLOADER SETUP INSTRUCTIONS:
+ *
+ * 1. Choose your plugin namespace: Replace {PluginName} with your plugin name (e.g., MyAwesomePlugin)
+ * 2. Choose your main class name: Replace {ClassName} with your bootstrap class (e.g., Plugin)
+ * 3. Update composer.json autoload section to match your chosen namespace
+ * 4. Create your class file in: src/{ClassName}.php
+ */
+use Bcgov\{PluginName}\{ClassName};
 
+$autoloader = __DIR__ . '/vendor/autoload.php';
+if ( file_exists( $autoloader ) ) {
+    require_once $autoloader;
+}
+
+if ( ! class_exists( 'Bcgov\\{PluginName}\\{ClassName}' ) ) {
+    return;
+}
+
+$plugin_instance = new {ClassName}();
+$plugin_instance->init();
 
 /**
  * The function register_plugin_blocks registers block types from metadata in block.json files
@@ -37,13 +57,3 @@ function register_plugin_blocks() {
 }
 // Hook the function into the 'init' action.
 add_action( 'init', 'register_plugin_blocks' );
-
-
-/**  // Example.
-* use Bcgov\{PluginName}\{
-**     {ClassName},
-** };
-** //Initialize
-** ${feature_name} = new {ClassName}();
-** ${feature_name}->init();
-*/

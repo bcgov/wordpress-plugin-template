@@ -37,10 +37,7 @@ if ( ! class_exists( 'Bcgov\\{PluginName}\\{ClassName}' ) ) {
 }
 
 $plugin_instance = new \Bcgov\(){PluginName}\{ClassName}();
-if ( method_exists( $plugin_instance, 'init' ) ) {
-    $plugin_instance->init();
-}
-
+$plugin_instance->init();
 
 /**
  * The function register_plugin_blocks registers block types from metadata in block.json files

@@ -21,8 +21,7 @@
     "email": "govwordpress@gov.bc.ca"
   },
   "engines": {
-    "npm": ">=11.4",
-    "node": ">=24.5.0 <= 26"
+    "node": ">=22.16.0 <= 23"
   },
   "main": "index.js",
   "devDependencies": {

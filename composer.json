@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-          "Bcgov\\{PluginName}\\": "src/Bcgov/{plugin-folder-name}"
+          "Bcgov\\{PluginName}\\": "src/"
         }
     },
     "scripts": {

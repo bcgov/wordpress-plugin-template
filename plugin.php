@@ -25,7 +25,7 @@
  * 3. Update composer.json autoload section to match your chosen namespace
  * 4. Create your class file in: src/{ClassName}.php
  */
-use Bcgov\{PluginName}\{ClassName};
+use Bcgov\PluginName\ClassName;
 
 $autoloader = __DIR__ . '/vendor/autoload.php';
 if ( file_exists( $autoloader ) ) {
@@ -36,7 +36,7 @@ if ( ! class_exists( 'Bcgov\\{PluginName}\\{ClassName}' ) ) {
     return;
 }
 
-$plugin_instance = new {ClassName}();
+$plugin_instance = new ClassName();
 $plugin_instance->init();
 
 /**

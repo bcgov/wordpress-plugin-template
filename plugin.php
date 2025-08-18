@@ -23,7 +23,7 @@
  * 1. Choose your plugin namespace: Replace {PluginName} with your plugin name (e.g., MyAwesomePlugin)
  * 2. Choose your main class name: Replace {ClassName} with your bootstrap class (e.g., Plugin)
  * 3. Update composer.json autoload section to match your chosen namespace
- * 4. Create your class file in: src/Bcgov/{your-plugin-name}/{ClassName}.php
+ * 4. Create your class file in: src/{ClassName}.php
  */
 use Bcgov\{PluginName}\{ClassName};
 

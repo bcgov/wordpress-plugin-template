@@ -4,6 +4,9 @@ permissions:
 on:
   pull_request:
   workflow_dispatch:
+    paths:
+      - "!vendor/**"
+      - "!dist/**"
 jobs:
   phpcs-validation:
     uses: bcgov/des-git-workflows/.github/workflows/phpcs-validate.yml@main

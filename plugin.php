@@ -36,7 +36,7 @@ if ( ! class_exists( 'Bcgov\\{PluginName}\\{ClassName}' ) ) {
     return;
 }
 
-$plugin_instance = new \Bcgov\{PluginName}\{ClassName}();
+$plugin_instance = new \Bcgov\(){PluginName}\{ClassName}();
 $plugin_instance->init();
 
 /**

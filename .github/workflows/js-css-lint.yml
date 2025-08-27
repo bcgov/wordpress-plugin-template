@@ -1,0 +1,10 @@
+name: js-css-lint
+permissions:
+  contents: read
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  lint:
+    uses: bcgov/des-git-workflows/.github/workflows/js-css-lint.yml@main # Adjust the branch as needed
+    with:
+      node_version: "^22.16.0" # this constraint must match the package.json "engines" field

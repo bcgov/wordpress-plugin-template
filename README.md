@@ -89,6 +89,14 @@ npm run build
 4. Push to the branch
 5. Create a Pull Request
 
+## `.gitattributes`
+
+This template uses `.gitattributes` to exclude development and documentation files from production plugin archives.
+
+Files marked with `export-ignore` are omitted from `git archive`–based packaging, helping ensure deployments contain only runtime code and assets.
+
+This file should be kept when creating a new plugin from the template. You may update it if your plugin adds or removes development tooling.
+
 ## License
 
 This template is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
